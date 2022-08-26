@@ -1,0 +1,16 @@
+git commands on bash:
+ssh-agent bash                  // to start agent i guess
+
+// if above id dont work then try      eval 'ssh-agent -s'    
+
+ssh-add ~/.ssh/id_rsa		// to add ssh private key
+
+//in order to change password of the existing ssh key
+
+ssh-keygen -p
+enter enter
+// cause they will ask old passphrase
+
+//copy ssh public key
+
+clip < ~/.ssh/id_rsa.pub
